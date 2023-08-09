@@ -353,6 +353,43 @@ header {
       justify-content: space-between;
       align-items: center; }
 
+/*--UTILIZACION--*/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .container .utilizacionUno h2 {
+    font-size: 40px;
+    margin-top: 30px; }
+  .container .utilizacionUno p {
+    font-size: 30px; }
+  .container .utilizacionUno ul li {
+    font-weight: bold;
+    font-size: 20px; }
+    .container .utilizacionUno ul li::marker {
+      color: red; }
+  .container .utilizacionDos h2 {
+    font-size: 30px;
+    margin-top: 20px; }
+  .container .utilizacionDos p {
+    font-size: 25px; }
+  .container .utilizacionDos ul li {
+    font-weight: bold;
+    font-size: 20px; }
+    .container .utilizacionDos ul li::marker {
+      color: red; }
+  .container .utilizacionTres h2 {
+    font-size: 40px;
+    margin-top: 30px; }
+  .container .utilizacionTres p {
+    font-size: 30px; }
+  .container .utilizacionTres ul li {
+    font-weight: bold;
+    font-size: 20px; }
+    .container .utilizacionTres ul li::marker {
+      color: red; }
+
 footer {
   display: flex;
   justify-content: space-between;

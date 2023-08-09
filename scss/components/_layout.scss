@@ -390,3 +390,65 @@
     }
     }
 }
+
+/*--UTILIZACION--*/
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .utilizacionUno{
+        h2{
+            font-size: 40px;
+            margin-top: 30px;
+        }
+        p{
+            font-size: 30px;
+        }
+        ul{
+            li{
+                font-weight: bold;
+                font-size: 20px;
+                &::marker{
+                    color: red;
+                }
+            }
+        }
+    }
+    .utilizacionDos{
+        h2{
+            font-size: 30px;
+            margin-top: 20px;
+        }
+        p{
+            font-size: 25px;
+        }
+        ul{
+            li{
+                font-weight: bold;
+                font-size: 20px;
+                &::marker{
+                    color: red;
+                }
+            }
+        }
+    }
+    .utilizacionTres{
+        h2{
+            font-size: 40px;
+            margin-top: 30px;
+        }
+        p{
+            font-size: 30px;
+        }
+        ul{
+            li{
+                font-weight: bold;
+                font-size: 20px;
+                &::marker{
+                    color: red;
+                }
+            }
+        }
+    }
+}
