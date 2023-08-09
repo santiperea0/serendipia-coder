@@ -1,0 +1,35 @@
+$paleta-colores:
+black,
+#2b3035,
+#6c502e,
+#f4ece4,
+#ccbcac,
+white;
+
+$font-size:
+10px,
+15px,
+18px,
+20px,
+25px,
+28px,
+30px,
+35px,
+40px,
+50px,
+60px;
+
+
+@mixin flex ($flex, $direction, $justify, $aling){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+%flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+} 

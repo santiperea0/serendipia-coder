@@ -268,15 +268,6 @@ footer div img{
     background-size: cover;
 }
 
-.heroNosotros h3{
-    font-size: 25px;
-}
-
-.heroNosotros h2{
-    font-size: 30px;
-    text-align: center;
-}
-
 .heroNosotros .logo{
     width: 600px;
     height: 400px;
@@ -301,7 +292,7 @@ footer div img{
     text-shadow: 0px 6px 4px rgba(0,0,0,0.4);
 }
 
-.heroNosotros h4{
+.heroNosotros h2{
     font-size: 50px;
     margin-top: 40px;
 }
@@ -349,7 +340,7 @@ footer div img{
     background-size: cover;
 }
 
-.procesoNosotros h2{
+.procesoNosotros h3{
     background-color: black;
     color: white;
     text-align: center;
@@ -391,7 +382,7 @@ footer div img{
     align-items: center;
 }
 
-.eleccionEsenciasReverse h4{
+.eleccionEsenciasReverse div h4{
     font-size: 40px;
 }
 
@@ -415,9 +406,6 @@ footer div img{
     align-items: center;
 }
 
-.eleccionEsenciasColumn h4{
-    font-size: 25px;
-}
 
 .eleccionEsenciasColumn div p{
     font-size: 40px;
@@ -440,10 +428,6 @@ footer div img{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
-
-.eleccionEsenciasFinal h4{
-    font-size: 25px;
 }
 
 .eleccionEsenciasFinal div p{
@@ -473,6 +457,14 @@ footer div img{
     width: 600px;
     height: 400px;
     margin-left: 30px;
+}
+
+.nuestrosProductos div h1{
+    font-size: 40px;
+}
+
+.nuestrosProductos div p{
+    font-size: 25px;
 }
 
 .nuestrosProductos img{
@@ -553,17 +545,9 @@ footer div img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
-
-
-
-
-
-
-
-
+/*--MEDIAQUERYS--*/
 @media screen and (max-width:1075px){
     .heroNosotros{
         height: 100vh;
@@ -708,7 +692,6 @@ footer div img{
         height: 240px;
     }
     
-    
 }
 
 
@@ -737,7 +720,7 @@ footer div img{
     }
     
     header nav ul li{
-        margin-right: 10px
+        margin-right: 10px;
     }
     
     header nav ul li a{
@@ -799,7 +782,6 @@ footer div img{
 
     .reverse h3{
         text-align: center;
-
     }
 
     .infoContainer div{
@@ -862,6 +844,98 @@ footer div img{
         height: 220px;
     }
 
+    /*--PRODUCTOS-MEDIA--*/
+    .nuestrosProductos{
+        height: 100vh;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nuestrosProductos div{
+        width: 600px;
+        height: 400px;
+        margin-left: 30px;
+    }
+    
+    .nuestrosProductos img{
+        border-radius: 4rem;
+        width: 500px;
+        height: 350px;
+    
+    }
+
+    /*--CONTACTO-MEDIA--*/
+    .formContainer{
+        height: 100vh;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .formContainer img{
+        display: none;
+    }
+    
+    
+    
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/fondo-contacto.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    
+    .mb-3{
+        width: 400px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    
+    .form-label{
+        width: 100px;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .mb-3 .row{
+        width: 400px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .select{
+        width: 400px;
+        height: 150px;
+        margin-top: 30px;
+    }
+    
+    .form-floating .form-control{
+        width: 400px;
+    }
+    
+    .buttonContainer{
+        width: 400px;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
 }
 
@@ -1048,7 +1122,36 @@ footer div img{
         height: 240px;
     }
     
+    /*--PRODUCTOS-MEDIA--*/
 
+    .nuestrosProductos{
+        height: 100vh;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nuestrosProductos div{
+        width: 400px;
+        height: 300px;
+        margin-left: 30px;
+    }
+
+    .nuestrosProductos div h1{
+        font-size: 30px;
+    }
+
+    .nuestrosProductos div p{
+        font-size: 20px;
+    }
+    
+    .nuestrosProductos img{
+        border-radius: 4rem;
+        width: 400px;
+        height: 300px;
+    
+    }
 }
 
 @media screen and (max-width:630px){
@@ -1305,6 +1408,39 @@ footer div img{
         margin: 10px;
         padding: 10px;
     }
+
+    /*--PRODUCTOS--MEDIA--*/
+
+    .nuestrosProductos{
+        height: 100vh;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nuestrosProductos div{
+        width: 300px;
+        height: 225px;
+        margin-left: 30px;
+    }
+
+    .nuestrosProductos div h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .nuestrosProductos div p{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .nuestrosProductos img{
+        border-radius: 4rem;
+        width: 300px;
+        height: 225px;
+    
+    }
 }
 
 
@@ -1353,6 +1489,39 @@ footer div img{
     .infoContainer img{
         width: 250px;
         height: 150px;
+    }
+
+    /*--PRODUCTOS--MEDIA--*/
+
+    .nuestrosProductos{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nuestrosProductos div{
+        width: 300px;
+        height: 225px;
+        margin-left: 30px;
+    }
+
+    .nuestrosProductos div h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .nuestrosProductos div p{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .nuestrosProductos img{
+        border-radius: 4rem;
+        width: 400px;
+        height: 250px;
+    
     }
 }
 
@@ -1438,6 +1607,7 @@ footer div img{
     }
     
     .reverse{
+        
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
@@ -1487,6 +1657,119 @@ footer div img{
         background-color: #f4ece4;
         
     }
+
+    /*--PRODUCTOS-MEDIA--*/
+
+    .nuestrosProductos{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nuestrosProductos div{
+        width: 300px;
+        height: 225px;
+        margin-left: 30px;
+    }
+
+    .nuestrosProductos div h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .nuestrosProductos div p{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .nuestrosProductos img{
+        border-radius: 4rem;
+        width: 350px;
+        height: 250px;
+    
+    }
+
+/*--CONTACTO-@MEDIA-*/
+    .formContainer{
+        height: 100vh;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .formContainer img{
+        width: 50%;
+        height: 100%;
+    }
+    
+    
+    
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/fondo-contacto.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    
+    .mb-3{
+        width: 400px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    
+    .form-label{
+        width: 100px;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .mb-3 .row{
+        width: 400px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+    
+    .select{
+        width: 200px;
+        height: 150px;
+        margin-top: 30px;
+    }
+    
+    .form-floating .form-control{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .buttonContainer{
+        width: 400px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 
@@ -1577,6 +1860,41 @@ footer div img{
     
     .tercer-item{
         grid-column: span 2;
+    }
+
+    .infoContainer{}
+
+    /*--PRODUCTOS-MEDIA--*/
+
+    .nuestrosProductos{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nuestrosProductos div{
+        width: 300px;
+        height: 225px;
+        margin-left: 30px;
+    }
+
+    .nuestrosProductos div h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .nuestrosProductos div p{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .nuestrosProductos img{
+        border-radius: 4rem;
+        width: 300px;
+        height: 225px;
+    
     }
 }
 

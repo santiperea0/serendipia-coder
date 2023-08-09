@@ -1,0 +1,1285 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quattrocento:wght@400;700&display=swap");
+/*-----PARAMETROS-----*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quattrocento'; }
+
+.heroNosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+
+header {
+  background: #2b3035;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Quattrocento';
+    font-weight: 200;
+    color: #f4ece4;
+    margin: 0 0 0 30px; }
+  header nav {
+    text-align: center; }
+    header nav ul {
+      list-style: none;
+      font-size: 20px;
+      display: flex;
+      text-align: center;
+      margin: 0; }
+      header nav ul li {
+        margin-right: 10px; }
+        header nav ul li a {
+          text-decoration: none;
+          color: #f4ece4;
+          font-size: 30px; }
+          header nav ul li a:hover {
+            color: #6c502e; }
+
+/*--Hero Inicio--*/
+.heroSect {
+  width: 100%;
+  height: calc(100vh - 55px);
+  background-image: url(../img/nosotros-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .heroSect div {
+    width: 600px;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+    border-radius: 3rem;
+    border: 3px #6c502e double;
+    padding: 10px;
+    margin-top: 15px;
+    background-image: url(../img/Logo-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1px -2px 62px 7px rgba(94, 80, 15, 0.59);
+    -webkit-box-shadow: 1px -2px 62px 7px rgba(94, 80, 15, 0.59);
+    -moz-box-shadow: 1px -2px 62px 7px rgba(94, 80, 15, 0.59); }
+  .heroSect p {
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 15px;
+    text-align: center; }
+
+/*--Grid Inicio--*/
+.gridContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 800px 400px;
+  gap: 5px; }
+  .gridContainer div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .gridContainer .gridItem {
+    grid-auto-rows: 400px; }
+  .gridContainer .tercer-item {
+    grid-column: span 2; }
+
+/*--Info Inicio--*/
+.infoContainer {
+  display: flex;
+  flex-direction: none;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: black;
+  outline-style: double;
+  background-color: #f4ece4; }
+  .infoContainer div {
+    width: 50%; }
+    .infoContainer div h2 {
+      font-size: 35px; }
+    .infoContainer div p {
+      font-size: 28px; }
+  .infoContainer img {
+    width: 450px;
+    height: 250px; }
+
+.reverse {
+  flex-direction: row-reverse;
+  border: none;
+  outline-style: none; }
+
+.Productos-container h2 {
+  font-size: 40px;
+  background-color: #f4ece4;
+  color: black;
+  text-align: center;
+  padding: 5px; }
+
+.Productos-container .card-flex {
+  display: flex;
+  flex-direction: none;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  .Productos-container .card-flex div {
+    font-size: 25px;
+    width: 350px;
+    border: 2px double black;
+    margin: 30px;
+    text-align: center;
+    box-shadow: -7px 9px 34px 7px #e7c8aa;
+    -webkit-box-shadow: -7px 9px 34px 7px #f8d4af;
+    -moz-box-shadow: -7px 9px 34px 7px #f1cdae;
+    background-color: #f4ece4; }
+    .Productos-container .card-flex div img {
+      width: 345px; }
+    .Productos-container .card-flex div button {
+      width: 125px;
+      height: 50px;
+      font-size: 20px;
+      color: white;
+      background-color: black;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 1rem; }
+      .Productos-container .card-flex div button:hover {
+        background-color: #6c502e;
+        color: white; }
+
+.position {
+  position: fixed;
+  bottom: 50px;
+  right: 50px; }
+  .position img {
+    width: 50px; }
+
+/*--NOSOTROS--*/
+.heroNosotros {
+  height: 100vh;
+  background-image: url(../img/nosotros-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+  .heroNosotros p {
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.4); }
+  .heroNosotros h2 {
+    font-size: 50px;
+    margin-top: 40px; }
+  .heroNosotros .botones {
+    display: inline-block; }
+    .heroNosotros .botones div {
+      width: 800px;
+      height: 500px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center; }
+      .heroNosotros .botones div button {
+        justify-content: space-between;
+        width: 250px;
+        height: 70px;
+        font-size: 40px;
+        border-radius: 1rem;
+        background-color: #ccbcac; }
+        .heroNosotros .botones div buttonhover {
+          background-color: #6c502e; }
+        .heroNosotros .botones div button a {
+          text-decoration: none;
+          color: black;
+          font-weight: 600; }
+
+.procesoNosotros {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/background-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .procesoNosotros h3 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600; }
+  .procesoNosotros h4 {
+    margin-top: 30px;
+    font-size: 40px;
+    text-align: center; }
+  .procesoNosotros .eleccionEsencias {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .procesoNosotros .eleccionEsencias div p {
+      font-size: 40px;
+      margin-left: 30px; }
+    .procesoNosotros .eleccionEsencias img {
+      border-radius: 5rem;
+      width: 700px;
+      height: 500px; }
+  .procesoNosotros .eleccionEsenciasReverse {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center; }
+    .procesoNosotros .eleccionEsenciasReverse div h4 {
+      font-size: 40px; }
+    .procesoNosotros .eleccionEsenciasReverse div p {
+      font-size: 40px;
+      margin-left: 30px; }
+    .procesoNosotros .eleccionEsenciasReverse img {
+      border-radius: 5rem;
+      width: 700px;
+      height: 500px; }
+  .procesoNosotros .eleccionEsenciasColumn {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .procesoNosotros .eleccionEsenciasColumn div p {
+      font-size: 40px;
+      margin-left: 30px; }
+    .procesoNosotros .eleccionEsenciasColumn div img {
+      border-radius: 5rem;
+      margin: 50px;
+      width: 333px;
+      height: 500px; }
+  .procesoNosotros .eleccionEsenciasFinal {
+    height: 100vh;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .procesoNosotros .eleccionEsenciasFinal div p {
+      font-size: 40px;
+      margin-left: 30px; }
+    .procesoNosotros .eleccionEsenciasFinal div img {
+      border-radius: 3rem;
+      margin: 20px;
+      width: 400px;
+      height: 400px; }
+
+/*--PRODUCTOS--*/
+.nuestrosProductos {
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center; }
+  .nuestrosProductos div {
+    width: 600px;
+    height: 400px;
+    margin-left: 30px; }
+    .nuestrosProductos div h1 {
+      font-size: 40px; }
+    .nuestrosProductos div p {
+      font-size: 25px; }
+  .nuestrosProductos img {
+    border-radius: 4rem;
+    width: 600px;
+    height: 400px; }
+
+/*--CONTACTO--*/
+.formContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center; }
+  .formContainer img {
+    width: 50%;
+    height: 100%; }
+  .formContainer .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/fondo-contacto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .formContainer .formulario .mb-3 {
+      width: 400px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .formContainer .formulario .mb-3 .row {
+        width: 400px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+    .formContainer .formulario .form-label {
+      width: 100px;
+      text-align: center;
+      margin: 0; }
+    .formContainer .formulario .select {
+      width: 400px;
+      height: 150px;
+      margin-top: 30px; }
+    .formContainer .formulario .form-floating .form-control {
+      width: 400px; }
+    .formContainer .formulario .buttonContainer {
+      width: 400px;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px; }
+  footer h2::first-letter {
+    font-size: 40px; }
+  footer div img {
+    margin: 10px;
+    padding: 10px; }
+
+@media screen and (max-width: 1075px) {
+  /*--NOSOTROS-MEDIA--*/
+  .heroNosotros {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(../img/nosotros-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; }
+    .heroNosotros .logo {
+      width: 500px;
+      height: 110px;
+      border-radius: 3rem;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      background-image: url(../img/Logo-1.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .heroNosotros p {
+      font-weight: 800;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 25px;
+      color: black;
+      text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.4); }
+    .heroNosotros h2 {
+      font-size: 30px;
+      text-align: center;
+      margin-top: 20px; }
+    .heroNosotros .botones div {
+      width: 800px;
+      height: 200px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center; }
+      .heroNosotros .botones div button {
+        width: 220px;
+        height: 60px;
+        font-size: 40px;
+        border-radius: 1rem;
+        background-color: #ccbcac; }
+  .procesoNosotros h3 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400; }
+  .procesoNosotros h4 {
+    margin-top: 30px;
+    font-size: 25px;
+    text-align: center; }
+  .procesoNosotros .eleccionEsencias {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .procesoNosotros .eleccionEsencias div p {
+      font-size: 30px;
+      margin-left: 30px; }
+    .procesoNosotros .eleccionEsencias img {
+      border-radius: 5rem;
+      width: 400px;
+      height: 250px; }
+  .procesoNosotros .eleccionEsenciasReverse div h4 {
+    font-size: 34px; }
+  .procesoNosotros .eleccionEsenciasReverse div p {
+    font-size: 30px;
+    margin-left: 30px; }
+  .procesoNosotros .eleccionEsenciasReverse img {
+    border-radius: 5rem;
+    width: 400px;
+    height: 250px; }
+  .procesoNosotros .eleccionEsenciasColumn div p {
+    font-size: 30px;
+    margin-left: 30px; }
+  .procesoNosotros .eleccionEsenciasColumn div img {
+    border-radius: 5rem;
+    margin: 80px;
+    width: 330px;
+    height: 500px; }
+  .procesoNosotros .eleccionEsenciasFinal div p {
+    font-size: 30px;
+    margin-left: 30px; }
+  .procesoNosotros .eleccionEsenciasFinal div img {
+    border-radius: 5rem;
+    margin: 40px;
+    width: 200px;
+    height: 240px; } }
+
+@media screen and (max-width: 900px) {
+  /*--INICIO-MEDIA--*/
+  header {
+    background: #2b3035;
+    padding: 5px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header h1 {
+      text-align: center;
+      font-size: 3rem;
+      font-family: 'Quattrocento';
+      font-weight: 200;
+      color: #f4ece4; }
+    header nav ul {
+      list-style: none;
+      font-size: 20px;
+      display: flex; }
+      header nav ul li {
+        margin-right: 10px; }
+        header nav ul li a {
+          text-decoration: none;
+          color: #f4ece4;
+          font-size: 20px; }
+  .heroSect div {
+    width: 350px;
+    height: 150px;
+    font-size: 60px;
+    border: 3px #00000088 double;
+    padding: 10px;
+    margin-top: 15px;
+    background-image: url(../img/Logo-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .heroSect p {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center; }
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 400px; }
+    .gridContainer .segundo-item {
+      grid-row: span 2; }
+    .gridContainer .tercer-item {
+      grid-column: span 1; }
+  .infoContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: rgba(0, 0, 0, 0.623);
+    outline-style: double;
+    background-color: #f4ece4; }
+  .reverse {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    outline-style: none; }
+    .reverse h3 {
+      text-align: center; }
+  .infoContainer div {
+    width: 40%; }
+    .infoContainer div h2 {
+      font-size: 30px; }
+      .infoContainer div h2 p {
+        font-size: 20px; }
+  .infoContainer img {
+    width: 400px;
+    height: 300px; }
+  /*--NOSOTROS-MEDIA--*/
+  .botones div {
+    width: 600px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+    .botones div button {
+      width: 170px;
+      height: 50px;
+      font-size: 40px;
+      border-radius: 1rem;
+      background-color: #ccbcac; }
+  .procesoNosotros .eleccionEsenciasColumn img {
+    border-radius: 5rem;
+    margin: 50px;
+    width: 300px;
+    height: 400px; }
+  .procesoNosotros .eleccionEsenciasFinal {
+    height: 100%; }
+    .procesoNosotros .eleccionEsenciasFinal div p {
+      font-size: 30px;
+      margin-left: 30px; }
+    .procesoNosotros .eleccionEsenciasFinal img {
+      border-radius: 4rem;
+      margin: 20px;
+      width: 200px;
+      height: 220px; }
+  /*--PRODUCTOS-MEDIA--*/
+  .nuestrosProductos {
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center; }
+    .nuestrosProductos div {
+      width: 600px;
+      height: 400px;
+      margin-left: 30px; }
+    .nuestrosProductos img {
+      border-radius: 4rem;
+      width: 500px;
+      height: 350px; }
+  /*-CONTACTO-MEDIA--*/
+  .formContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center; }
+    .formContainer img {
+      display: none; }
+    .formContainer .formulario {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background-image: url(../img/fondo-contacto.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .formContainer .formulario .mb-3 {
+        width: 400px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .formContainer .formulario .mb-3 .row {
+          width: 400px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+      .formContainer .formulario .form-label {
+        width: 100px;
+        text-align: center;
+        margin: 0; }
+      .formContainer .formulario .select {
+        width: 400px;
+        height: 150px;
+        margin-top: 30px; }
+      .formContainer .formulario .form-floating .form-control {
+        width: 400px; }
+      .formContainer .formulario .buttonContainer {
+        width: 400px;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; } }
+
+@media screen and (max-width: 700px) {
+  /*--INICIO-MEDIA--*/
+  header {
+    background: #2b3035;
+    padding: 5px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header h1 {
+      text-align: center;
+      font-size: 3rem;
+      font-family: 'Quattrocento';
+      font-weight: 200;
+      color: #f4ece4; }
+    header ul {
+      list-style: none;
+      font-size: 20px;
+      display: flex; }
+      header ul li {
+        margin-right: 10px; }
+        header ul li a {
+          text-decoration: none;
+          color: #f4ece4;
+          font-size: 20px; }
+  .heroSect div {
+    width: 350px;
+    height: 150px;
+    font-size: 60px;
+    border: 3px #00000088 double;
+    padding: 10px;
+    margin-top: 15px;
+    background-image: url(../img/Logo-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .heroSect p {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center; }
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 400px; }
+    .gridContainer .segundo-item {
+      grid-row: span 2; }
+    .gridContainer .tercer-item {
+      grid-column: span 1; }
+  .infoContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: rgba(0, 0, 0, 0.623);
+    outline-style: double;
+    background-color: #f4ece4; }
+    .infoContainer div {
+      width: 30%; }
+      .infoContainer div h2 {
+        font-size: 25px;
+        margin-bottom: 10px; }
+      .infoContainer div p {
+        font-size: 18px; }
+    .infoContainer img {
+      width: 425px;
+      height: 350px; }
+  .reverse {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    outline-style: none; }
+    .reverse h3 {
+      text-align: center; }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px; }
+    footer h2 {
+      font-size: 40px; }
+    footer div img {
+      margin: 10px;
+      padding: 10px; }
+  /*--NOSOTROS-MEDIA--*/
+  .procesoNosotros h2 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400; }
+  .procesoNosotros h4 {
+    margin-top: 30px;
+    font-size: 25px;
+    text-align: center; }
+  .procesoNosotros .eleccionEsencias div p {
+    font-size: 25px;
+    margin-left: 20px; }
+  .procesoNosotros .eleccionEsencias img {
+    border-radius: 5rem;
+    width: 350px;
+    height: 200px; }
+  .procesoNosotros .eleccionEsenciasReverse div h4 {
+    margin-bottom: 10px;
+    font-size: 25px; }
+  .procesoNosotros .eleccionEsenciasReverse div p {
+    font-size: 20px;
+    margin-left: 10px; }
+  .procesoNosotros .eleccionEsenciasReverse img {
+    margin-top: 10px;
+    border-radius: 5rem;
+    width: 500px;
+    height: 250px; }
+  .procesoNosotros .eleccionEsenciasColumn div p {
+    font-size: 25px;
+    margin-left: 20px; }
+  .procesoNosotros .eleccionEsenciasColumn img {
+    border-radius: 5rem;
+    margin: 10px;
+    width: 180px;
+    height: 250px; }
+  .procesoNosotros .eleccionEsenciasFinal div p {
+    font-size: 25px;
+    margin-left: 20px; }
+  .procesoNosotros .eleccionEsenciasFinal img {
+    border-radius: 5rem;
+    margin: 10px;
+    width: 180px;
+    height: 240px; }
+  /*--PRODUCTOS-MEDIA--*/
+  .nuestrosProductos {
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center; }
+    .nuestrosProductos div {
+      width: 400px;
+      height: 300px;
+      margin-left: 30px; }
+      .nuestrosProductos div h1 {
+        font-size: 30px; }
+      .nuestrosProductos div p {
+        font-size: 20px; }
+    .nuestrosProductos img {
+      border-radius: 4rem;
+      width: 400px;
+      height: 300px; } }
+
+@media screen and (max-width: 630px) {
+  .infoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: rgba(0, 0, 0, 0.623);
+    outline-style: double;
+    background-color: #f4ece4; }
+    .infoContainer div {
+      width: 40%; }
+      .infoContainer div h2 {
+        font-size: 25px;
+        margin-bottom: 10px;
+        text-align: center; }
+      .infoContainer div p {
+        font-size: 15px;
+        text-align: center; }
+    .infoContainer img {
+      width: 300px;
+      height: 200px; }
+  .reverse {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    outline-style: none; }
+    .reverse h3 {
+      text-align: center; }
+  .Productos-container h2 {
+    font-size: px;
+    background-color: #f4ece4;
+    color: black;
+    text-align: center;
+    padding: 5px; }
+  .Productos-container .card-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .Productos-container .card-flex div {
+      font-size: 20px;
+      width: 350px;
+      border: 2px double black;
+      margin: 30px;
+      text-align: center;
+      box-shadow: -7px 9px 34px 7px #e7c8aa;
+      -webkit-box-shadow: -7px 9px 34px 7px #f8d4af;
+      -moz-box-shadow: -7px 9px 34px 7px #f1cdae;
+      background-color: #f4ece4; }
+      .Productos-container .card-flex div img {
+        width: 345px; }
+      .Productos-container .card-flex div button {
+        color: white;
+        background-color: black;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 3rem; }
+  .position {
+    display: none; }
+  /*--NOSOTROS-MEDIA--*/
+  .heroNosotros {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(../img/nosotros-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; }
+    .heroNosotros .logo {
+      width: 300px;
+      height: 200px;
+      border-radius: 3rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-image: url(../img/Logo-1.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .heroNosotros p {
+      font-weight: 800;
+      font-size: 25px;
+      text-align: center;
+      margin-top: 20px;
+      color: black;
+      text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.4); }
+    .heroNosotros h2 {
+      font-size: 10px;
+      text-align: center; }
+    .heroNosotros .botones div {
+      width: 300px;
+      height: 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center; }
+      .heroNosotros .botones div button {
+        width: 100px;
+        height: 30px;
+        font-size: 20px;
+        border-radius: 1rem;
+        background-color: #ccbcac; }
+  .procesoNosotros h3 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400; }
+  .procesoNosotros h4 {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center; }
+  .procesoNosotros .eleccionEsencias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .procesoNosotros .eleccionEsencias div p {
+      font-size: 25px;
+      margin-left: 25px; }
+    .procesoNosotros .eleccionEsencias img {
+      border-radius: 3rem;
+      width: 100%;
+      height: 250px; }
+  .procesoNosotros .eleccionEsenciasReverse {
+    flex-direction: column; }
+    .procesoNosotros .eleccionEsenciasReverse div h4 {
+      font-size: 28px; }
+    .procesoNosotros .eleccionEsenciasReverse div p {
+      font-size: 25px;
+      margin-left: 25px; }
+    .procesoNosotros .eleccionEsenciasReverse img {
+      border-radius: 3rem;
+      width: 100%;
+      height: 250px; }
+  .procesoNosotros .eleccionEsenciasColumn div p {
+    font-size: 25px;
+    margin-left: 25px; }
+  .procesoNosotros .eleccionEsenciasColumn img {
+    border-radius: 4rem;
+    margin: 10px;
+    width: 220px;
+    height: 200px; }
+  .procesoNosotros .eleccionEsenciasFinal div p {
+    font-size: 25px;
+    margin-left: 25px; }
+  .procesoNosotros .eleccionEsenciasFinal img {
+    border-radius: 4rem;
+    margin: 15px;
+    width: 210px;
+    height: 220px; }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px; }
+    footer h2 {
+      font-size: 30px; }
+    footer div img {
+      width: 60px;
+      margin: 10px;
+      padding: 10px; }
+  /*--PRODUCTOS-MEDIA--*/
+  .nuestrosProductos {
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center; }
+    .nuestrosProductos div {
+      width: 300px;
+      height: 225px;
+      margin-left: 30px; }
+      .nuestrosProductos div h1 {
+        font-size: 30px;
+        text-align: center; }
+      .nuestrosProductos div p {
+        font-size: 20px;
+        text-align: center; }
+    .nuestrosProductos img {
+      border-radius: 4rem;
+      width: 300px;
+      height: 225px; } }
+
+@media screen and (max-width: 515px) {
+  /*--INICIO-MEDIA--*/
+  .infoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: rgba(0, 0, 0, 0.623);
+    outline-style: double;
+    background-color: #f4ece4; }
+    .infoContainer div {
+      width: 100%; }
+      .infoContainer div h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center; }
+      .infoContainer div p {
+        font-size: 15px;
+        text-align: center; }
+    .infoContainer img {
+      width: 250px;
+      height: 150px; }
+  .reverse {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    outline-style: none; }
+  h3 {
+    text-align: center; }
+  /*--PRODUCTOS-MEDIA--*/
+  .nuestrosProductos {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .nuestrosProductos div {
+      width: 300px;
+      height: 225px;
+      margin-left: 30px; }
+      .nuestrosProductos div h1 {
+        font-size: 30px;
+        text-align: center; }
+      .nuestrosProductos div p {
+        font-size: 20px;
+        text-align: center; }
+    .nuestrosProductos img {
+      border-radius: 4rem;
+      width: 400px;
+      height: 250px; } }
+
+@media screen and (max-width: 470px) {
+  /*--INICIO-MEDIA--*/
+  header h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Quattrocento';
+    font-weight: 200;
+    color: #f4ece4; }
+  header nav ul {
+    list-style: none;
+    font-size: 20px;
+    display: flex; }
+    header nav ul li {
+      margin-right: 10px; }
+      header nav ul li a {
+        text-decoration: none;
+        color: #f4ece4;
+        font-size: 18px; }
+  .heroSect {
+    width: 100%;
+    height: calc(100vh - 72px);
+    background-image: url(../img/nosotros-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000000d8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .heroSect div {
+      width: 300px;
+      height: 100px;
+      border: 3px #00000088 double;
+      padding: 10px;
+      margin-top: 15px;
+      background-image: url(../img/Logo-1.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .heroSect p {
+      font-size: 25px;
+      margin-top: 15px;
+      text-align: center; }
+  .infoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: rgba(0, 0, 0, 0.623);
+    outline-style: double;
+    background-color: #f4ece4; }
+    .infoContainer div h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-align: center; }
+    .infoContainer div p {
+      font-size: 15px;
+      text-align: center; }
+    .infoContainer img {
+      width: 250px;
+      height: 150px; }
+  .reverse {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    outline-style: none; }
+    .reverse h3 {
+      text-align: center; }
+  .Productos-container h2 {
+    font-size: 25px;
+    background-color: #f4ece4;
+    color: black;
+    text-align: center;
+    padding: 5px; }
+  .Productos-container .card-flex div {
+    font-size: 18px;
+    width: 350px;
+    border: 2px double black;
+    margin: 30px;
+    text-align: center;
+    box-shadow: -7px 9px 34px 7px #e7c8aa;
+    -webkit-box-shadow: -7px 9px 34px 7px #f8d4af;
+    -moz-box-shadow: -7px 9px 34px 7px #f1cdae;
+    background-color: #f4ece4; }
+  /*--PRODUCTOS-MEDIA--*/
+  .nuestrosProductos {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .nuestrosProductos div {
+      width: 300px;
+      height: 225px;
+      margin-left: 30px; }
+      .nuestrosProductos div h1 {
+        font-size: 30px;
+        text-align: center; }
+      .nuestrosProductos div p {
+        font-size: 20px;
+        text-align: center; }
+    .nuestrosProductos img {
+      border-radius: 4rem;
+      width: 350px;
+      height: 250px; }
+  /*--CONTACTO-MEDIA--*/
+  .formContainer .formContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center; }
+  .formContainer img {
+    width: 50%;
+    height: 100%; }
+  .formContainer .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondo-contacto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .formContainer .formulario .mb-3 {
+      width: 400px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .formContainer .formulario .mb-3 .row {
+        width: 400px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+    .formContainer .formulario .row {
+      flex-direction: column; }
+    .formContainer .formulario .form-label {
+      width: 100px;
+      text-align: center;
+      margin: 0; }
+    .formContainer .formulario .select {
+      width: 200px;
+      height: 150px;
+      margin-top: 30px; }
+    .formContainer .formulario .form-floating .form-control {
+      width: 200px;
+      display: flex;
+      flex-direction: column; }
+    .formContainer .formulario .buttonContainer {
+      width: 400px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+
+@media screen and (max-width: 350px) {
+  /*--INICIO-MEDIA--*/
+  header {
+    background: #2b3035;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header h1 {
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: 'Quattrocento';
+      font-weight: 200;
+      color: #f4ece4; }
+    header nav ul {
+      list-style: none;
+      font-size: 10px;
+      display: flex; }
+      header nav ul li {
+        margin-right: 10px; }
+        header nav ul li a {
+          text-decoration: none;
+          color: #f4ece4;
+          font-size: 15px; }
+  .heroSect {
+    width: 100%;
+    height: calc(100vh - 51px);
+    background-image: url(../img/nosotros-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000000d8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .heroSect div {
+      width: 290px;
+      height: 80px;
+      padding: 10px;
+      margin-top: 15px;
+      background-image: url(../img/Logo-1.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .heroSect p {
+      font-size: 25px;
+      margin-top: 50px;
+      text-align: center; }
+  .gridContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 200px;
+    gap: 5px; }
+    .gridContainer div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .gridContainer div .tercer-item {
+      grid-column: span 2; }
+  /*--PRODUCTOS-MEDIA--*/
+  .nuestrosProductos {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .nuestrosProductos div {
+      width: 300px;
+      height: 225px;
+      margin-left: 30px; }
+      .nuestrosProductos div h1 {
+        font-size: 30px;
+        text-align: center; }
+      .nuestrosProductos div p {
+        font-size: 20px;
+        text-align: center; }
+    .nuestrosProductos img {
+      border-radius: 4rem;
+      width: 300px;
+      height: 225px; }
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: rgba(0, 0, 0, 0.623);
+    outline-style: double;
+    background-color: #f4ece4; }
+    .infoContainer div h2 {
+      font-weight: 600;
+      font-size: 20px;
+      margin-top: 10px;
+      text-align: center; }
+    .infoContainer div p {
+      font-size: 15px;
+      text-align: center; }
+    .infoContainer img {
+      width: 350px;
+      height: 150px; } }
