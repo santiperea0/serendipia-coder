@@ -905,6 +905,29 @@
 
     }
 }
+/*UTILIZACION-MEDIA*/
+.utilizacionDos{
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 25px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: circle;
+        li{
+            font-size: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            
+        }
+    }
+}
 }
 
 @media screen and (max-width:515px){
@@ -1183,6 +1206,99 @@
             }
         }
     }
+    /*NOSOTROS-MEDIA*/
+    .procesoNosotros{
+        h3{
+            background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 400;
+        }
+        h4{
+            margin-top: 15px;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 600;
+        }
+        .eleccionEsencias{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            div{
+                p{
+                    font-size: 20px;
+            margin-left: 0px;
+            text-align: center;
+                }
+            }
+            img{
+                border-radius: 3rem;
+                width: 100%;
+                height: 250px;
+                margin-top: 5px;
+            }
+        }
+        .eleccionEsenciasReverse{
+            div{
+                h4{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+                }
+            }
+            img{
+                border-radius: 3rem;
+            width: 100%;
+            height: 250px;
+            }
+        }
+        .eleccionEsenciasColumn{
+            div{
+                p{
+                    font-size: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+                }
+            }
+            div{
+                img{
+                    border-radius: 4rem;
+                    margin: 0px;
+                    width: 220px;
+                    height: 200px;
+                }
+            }
+        }
+        .eleccionEsenciasFinal{
+            div{
+                p{
+                    font-size: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+                }
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img{
+                    border-radius: 4rem;
+                    margin: 15px;
+                    width: 210px;
+                    height: 220px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:350px){
@@ -1299,6 +1415,7 @@
 
     }
 }
+/*--INICIO-INFO-MEDIA--*/
 .infoContainer{
     display: flex;
         flex-direction: column;
@@ -1323,6 +1440,370 @@
             width: 350px;
         height: 150px;
         }
+}
+/*NOSOTROS-MEDIA*/
+.heroNosotros{
+    height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-image: url(../img/nosotros-1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    .logo{
+        width: 300px;
+        height: 200px;
+        border-radius: 3rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-image: url(../img/Logo-1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    p{
+        font-weight: 800;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 20px;
+        color: black;
+        text-shadow: 0px 6px 4px rgba(0,0,0,0.4);
+        display: none;
+    }
+    h2{
+        font-size: 20px;
+        text-align:center;
+        color: black;
+    }
+}
+    .procesoNosotros{
+        h3{
+            background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 400;
+        }
+        h4{
+            margin-top: 15px;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+        .eleccionEsencias{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            div{
+                p{
+                    font-size: 20px;
+            margin-left: 0px;
+            text-align: center;
+                }
+            }
+            img{
+                border-radius: 3rem;
+                width: 100%;
+                height: 250px;
+                margin-top: 5px;
+            }
+        }
+        .eleccionEsenciasReverse{
+            div{
+                h4{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+                }
+            }
+            img{
+                border-radius: 3rem;
+            width: 100%;
+            height: 250px;
+            }
+        }
 
+        .eleccionEsenciasColumn{
+            div{
+                p{
+                    font-size: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+                }
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img{
+                    border-radius: 4rem;
+                    margin: 10px;
+                    width: 220px;
+                    height: 200px;
+                }
+        }
+    }
+    .eleccionEsenciasFinal{
+        div{
+            p{
+                font-size: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+            }
+        }
+        div{
+            display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            img{
+                border-radius: 4rem;
+                    margin: 15px;
+                    width: 210px;
+                    height: 220px;
+            }
+        }
+    }
+    /*CONTACTO-MEDIA*/
+    .formContainer{
+        height: 100vh;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-image: url(../img/fondo-contacto.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            .mb-3{
+                width: 400px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+                .row{
+                    width: 400px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+                }
+            }
+            .row{
+                flex-direction: column;
+            }
+            .form-label{
+                width: 100px;
+        text-align: center;
+        margin: 0;
+            }
+            .select{
+                width: 200px;
+        height: 150px;
+        margin-top: 30px;
+            }
+            .form-floating{
+                .form-control{
+                    width: 200px;
+        display: flex;
+        flex-direction: column;
+                }
+            }
+            .buttonContainer{
+                width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            }
+        }
+    }
+/*UTILIZACION-MEDIA*/
+.utilizacionUno{
+    h2{
+        margin-left: 15px;
+        text-align: center;
+    }
+    p{
+        margin-left: 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 30px;
+        list-style-type: circle;
+        li{
+            font-size: 20px;
+        }
+    }
+}
+.utilizacionDos{
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 25px;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: circle;
+        li{
+            font-size: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            
+        }
+    }
+}
+.utilizacionTres{
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 25px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type:circle;
+        li{
+            font-size: 20px;
+        }
+    }
+}
+}
+
+@media screen and (max-width:320px){
+    /*--INICIO-INFO-MEDIA--*/
+    .infoContainer{
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-top: none;
+            outline-style: none;
+            background-color: #f4ece4;
+            img{
+                width: 320px;
+            height: 150px;
+            }
+    }
+    /*-INICIO-PRODUCTOS-MEDIA-*/
+    .Productos-container{
+        h2{
+            font-size:25px;
+        background-color: #f4ece4;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 5px;
+        }
+        .card-flex{
+            div{
+                font-size: 18px;
+                width: 320px;
+                border: 1px double rgb(0, 0, 0);
+                margin-top: 10px;
+                margin-bottom: 10px;
+                text-align: center;
+                box-shadow: -7px 9px 34px 7px #e7c8aa;
+                -webkit-box-shadow: -7px 9px 34px 7px #f8d4af;
+                -moz-box-shadow: -7px 9px 34px 7px #f1cdae;
+                background-color: #f4ece4;
+                img{
+                    width: 318px;
+                }
+            }
+        }
+    }
+    /*NOSOTROS-MEDIA*/  
+    .heroNosotros{
+        height: calc(100vh - 66px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(../img/nosotros-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    .logo{
+        width: 225px;
+    height: 200px;
+    border-radius: 3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url(../img/Logo-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px -2px 62px 7px rgba(94,80,15,0.59);
+    -webkit-box-shadow: 1px -2px 62px 7px rgba(94,80,15,0.59);
+    -moz-box-shadow: 1px -2px 62px 7px rgba(94,80,15,0.59);
+    }
+    p{
+        font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    text-shadow: 0px 6px 4px rgba(0,0,0,0.4);
+    display: none;
+    }
+    h2{
+        font-size: 18px;
+    margin-top: 30px;
+    font-weight: 800;
+    }
+    .botones{
+        display: inline-block;
+        div{
+            width: 250px;
+    height: 100px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-items: center;
+            button{
+                justify-content: space-between;
+    width: 70px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 0.5rem;
+    background-color: #ccbcac;
+            }
+        }
+    }
+    }
 }
 }

@@ -392,63 +392,66 @@
 }
 
 /*--UTILIZACION--*/
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .utilizacionUno{
-        h2{
-            font-size: 40px;
-            margin-top: 30px;
-        }
-        p{
-            font-size: 30px;
-        }
-        ul{
-            li{
-                font-weight: bold;
-                font-size: 20px;
-                &::marker{
-                    color: red;
-                }
-            }
+.utilizacionUno{
+    h2{
+        margin-left: 15px;
+        text-align: center;
+    }
+    p{
+        margin-left: 10px;
+        font-size: 25px;
+        text-align: center;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 30px;
+        list-style-type: circle;
+        li{
+            font-size: 20px;
         }
     }
-    .utilizacionDos{
-        h2{
-            font-size: 30px;
-            margin-top: 20px;
-        }
-        p{
-            font-size: 25px;
-        }
-        ul{
-            li{
-                font-weight: bold;
-                font-size: 20px;
-                &::marker{
-                    color: red;
-                }
-            }
+}
+.utilizacionDos{
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 25px;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: circle;
+        li{
+            font-size: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            
         }
     }
-    .utilizacionTres{
-        h2{
-            font-size: 40px;
-            margin-top: 30px;
-        }
-        p{
-            font-size: 30px;
-        }
-        ul{
-            li{
-                font-weight: bold;
-                font-size: 20px;
-                &::marker{
-                    color: red;
-                }
-            }
+}
+.utilizacionTres{
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 25px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type:circle;
+        li{
+            font-size: 20px;
         }
     }
 }
